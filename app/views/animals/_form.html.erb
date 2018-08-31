@@ -1,4 +1,7 @@
 <%= form_for @animal do |f| %>
+  <%= f.label :species %>
+  <%= f.text_field :species %>
+
   <%= f.label :name %>
   <%= f.text_field :name %>
 
@@ -16,6 +19,9 @@
 
   <%= f.label :alive %>
   <%= f.text_field :alive %>
+
+  <%= f.label :species %>
+  <%= f.text_field :species %>
 
   <%= f.submit %>
   <% end %>
